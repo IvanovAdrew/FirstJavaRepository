@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Timer {
     String temporaryText;
-    int distanceInTimeBetweenTwoChars = 200;
-    int distanceInTimeBetweenTwoLines = 2000;
+    final static int DISTANSE_IN_TIME_BETWEEN_TWO_CHARS = 200;
+    final static int DISTANSE_IN_TIME_BETWEEN_TWO_LINES = 2000;
 
     public void startingWritingText(List<String> text) {
         if (text == null) {
@@ -20,10 +20,10 @@ public class Timer {
                             for (int j = 0; j < temporaryText.length(); j++) {
                                 char oneChar = temporaryText.charAt(j);
                                 System.out.print(oneChar);
-                                Thread.sleep(distanceInTimeBetweenTwoChars);
+                                Thread.sleep(DISTANSE_IN_TIME_BETWEEN_TWO_CHARS);
                             }
                             System.out.println();//doing
-                            Thread.sleep(distanceInTimeBetweenTwoLines); //1000 - 1 сек
+                            Thread.sleep(DISTANSE_IN_TIME_BETWEEN_TWO_LINES); //1000 - 1 сек
                         } catch (InterruptedException ex) {
                         }
                     }
