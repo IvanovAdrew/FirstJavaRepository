@@ -9,6 +9,7 @@ public class MostMain {
     public static void main(String[]args){
         Timer timer = new Timer();
         Timer timerSecondTry = new Timer();
+        Timer timerThirdTry = new Timer();
 
         Scanner in = new Scanner(System.in);
         List<String> story = new ArrayList<String>();
