@@ -5,8 +5,6 @@ public class Main {
         Car firstCar = new Car("UA7896KA","green");
         Car secondCar = new Car("UA7896KA","blue");
         Car thirdCar = new Car("UA7896KA","black");
-        Car fourthCar = new Car("PI2345KI","black");
-        Car fifthCar = new Car("KI7490OJ","white");
         System.out.println("firstCar equals with secondCar " + firstCar.equals(firstCar)); //reflexive
         System.out.println();
 
