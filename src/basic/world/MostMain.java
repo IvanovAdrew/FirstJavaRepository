@@ -37,9 +37,9 @@ public class MostMain {
         Animal c = new Dog(ageKitten,nameKitten);
 
         story.add("А вот тепееееерь");
-        story.add(c.sayingMyPhrase());
-        story.add(d1.sayingMyPhrase());
-        story.add(d2.sayingMyPhrase());
+        story.add(c.sayMyPhrase());
+        story.add(d1.sayMyPhrase());
+        story.add(d2.sayMyPhrase());
         story.add("И начнем мы с того что как-то раз "+ namingDog3+ " и "+ namingDog4 +" игрались во дворе");
         story.add("в один момент они увидели кошака который бежал куда-то ");
         story.add("собсна они конечно-же побежали за ним");

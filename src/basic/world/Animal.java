@@ -8,8 +8,8 @@ public abstract class Animal {
     public Animal(int myHumanAge,String name){
         this.myHumanAge=myHumanAge;
         this.name=name;
-
+        whatNumberI += 1;
     }
-    public abstract String sayingMyPhrase ();
+    public abstract String sayMyPhrase ();
 
 }
