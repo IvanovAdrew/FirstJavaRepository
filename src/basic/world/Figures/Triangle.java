@@ -1,6 +1,6 @@
 package basic.world.Figures;
 public class Triangle extends Shape {
-    double firstSide;
+    double firstSide; //double because it not very comfortable for me to use at first int sides and then double perimetr
     double secondSide;
     double thirdSide;
     public Triangle(int firstSide,int secondSide,int thirdSide){
@@ -10,9 +10,9 @@ public class Triangle extends Shape {
     }
 
     @Override
-    public int calculationArea() {
+    public double calculateArea() {
         double halfPerimetr=(thirdSide+firstSide+secondSide)/2;
-        super.area= (int) Math.sqrt(halfPerimetr*(halfPerimetr - firstSide)*(halfPerimetr - secondSide)*(halfPerimetr - thirdSide));
-        return (super.area);
+        super.area=  Math.sqrt(halfPerimetr*(halfPerimetr - firstSide)*(halfPerimetr - secondSide)*(halfPerimetr - thirdSide));
+        return super.area;
     }
 }

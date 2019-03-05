@@ -1,14 +1,16 @@
 package basic.world.Figures;
 
-import java.util.Scanner;
-
 public class Square extends Shape{
+    int firstSide;
+    public Square(int firstSide) {
+        this.firstSide=firstSide;
+
+
+    }
     @Override
-    public int calculationArea() {
-        System.out.println("side of square = ");
-        Scanner in = new Scanner(System.in);
-        int firstSide = in.nextInt();
+    public double calculateArea() {
+
         super.area= firstSide*firstSide;
-        return area;
+        return super.area;
     }
 }
