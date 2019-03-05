@@ -33,8 +33,8 @@ public class MostMain {
         int ageDog2 = in.nextInt();
         in.close();
         Animal d1 = new Dog(ageDog1,namingDog3);
-        Animal d2 = new Dog(ageDog1,namingDog4);
-        Animal c = new Dog(ageKitten,nameKitten);
+        Animal d2 = new Dog(ageDog2,namingDog4);
+        Animal c = new Cat(ageKitten,nameKitten);
 
         story.add("А вот тепееееерь");
         story.add(c.sayMyPhrase());
